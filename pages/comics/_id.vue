@@ -2,7 +2,7 @@
   <div class="container">
     <h1>{{ series.name }}</h1>
     <description :series="series"></description>
-    <p><nuxt-link to="/posts">Back to the list</nuxt-link></p>
+    <p><nuxt-link to="/comics">Back to the list</nuxt-link></p>
   </div>
 </template>
 
