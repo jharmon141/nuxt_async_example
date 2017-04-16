@@ -1,1 +1,0 @@
-# nuxt_async_example
