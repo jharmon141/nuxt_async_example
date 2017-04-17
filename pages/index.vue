@@ -5,17 +5,17 @@
 </template>
 
 <script>
-export default {
-  asyncData ({ req }, callback) {
-    setTimeout(function () {
-      // callback(err, data)
-      callback(null, {
-        userAgent: (req ? req.headers['user-agent'] : navigator.userAgent)
-      })
-    }, 100)
-  }
-}
-</script>
+    export default {
+        asyncData ({ req }, callback) {
+            setTimeout(function () {
+                // callback(err, data)
+                callback(null, {
+                    userAgent: (req ? req.headers['user-agent'] : navigator.userAgent)
+                })
+            }, 100)
+        }
+    }
+    </script>
 
 <style scoped>
 .container {

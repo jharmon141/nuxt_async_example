@@ -11,11 +11,11 @@ import axios from 'axios'
 import description from './description.vue'
 
 export default {
-  async asyncData ({ params }) {
-    // We can use async/await ES6 feature
-    let { data } = await axios.get(`https://comicvine.gamespot.com/api/issues/?api_key=bbef359c016ca8feb10fdfd96f3a3ea542633b3e&filter=id:${params.id}&format=json`)
-    return { series: data.results[0]}
-  },
+    async asyncData ({ params }) {
+        // We can use async/await ES6 feature
+        let { data } = await axios.get(`https://crossorigin.me/https://comicvine.gamespot.com/api/issues/?api_key=bbef359c016ca8feb10fdfd96f3a3ea542633b3e&filter=id:${params.id}&format=json`)
+        return { series: data.results[0]}
+    },
 
     components: {
         'description': description

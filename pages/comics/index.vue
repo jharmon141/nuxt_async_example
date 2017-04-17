@@ -14,13 +14,13 @@
 import axios from 'axios'
 
 export default {
-  asyncData ({ req, params }) {
-    // We can return a Promise instead of calling the callback
-    return axios.get('https://comicvine.gamespot.com/api/issues/?api_key=bbef359c016ca8feb10fdfd96f3a3ea542633b3e&filter=name:batman&sort=store_date:desc&format=json')
-    .then((res) => {
-      return { series_list: res.data.results.slice(0, 50) }
-    })
-  }
+    asyncData ({ req, params }) {
+        // We can return a Promise instead of calling the callback
+        return axios.get('https://crossorigin.me/https://comicvine.gamespot.com/api/issues/?api_key=bbef359c016ca8feb10fdfd96f3a3ea542633b3e&filter=name:batman&sort=store_date:desc&format=json')
+            .then((res) => {
+                return { series_list: res.data.results.slice(0, 50) }
+            })
+    }
 }
 </script>
 
